@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VisaListo MX - Asesoría profesional para tramitar tu visa americana.">
+  <title>VisaListo MX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="topbar2">
+  <nav class="navbar2 container">
+    <a href="index.html" class="brand2">
+      <img src="/assets/img/logomini.png" alt="VisaListo MX Logo" class="logo">
+      <span class="span">VisaListo MX</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+   <div id="overlay">
+     <ul class="navlinks2" id="navlinks">
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="servicios.html">SERVICIOS</a></li>
+      <li><a href="testimonios.html">TESTIMONIOS</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contacto.html" class="btn btn-sm">CONTACTO</a></li>
+    </ul></div>
+  </nav>
+</header>
+
+   <!-- Bloque con fondo -->
+  <div class="sobre-mi-header5">
+    <h1>TESTIMONIOS</h1>
+  </div>
+<section class="container prose3 " data-aos="fade-up">
+  <h1>Opiniones reales de quienes confiaron en VisaListo MX</h1>
+  <div class="cards testimonials">
+    <article class="card2">
+      <p>“No sabía ni por dónde empezar con mi trámite. Carlos me explicó todo con calma, me ayudó a llenar el formulario y me dio mucha seguridad. ¡Ya tengo mi visa!”</p>
+      <h4>— Laura M., Veracruz</h4>
+    </article>
+    <article class="card2">
+      <p>Era mi primera vez solicitando una visa y honestamente me sentía perdida con tanta información. Me topé con VisaListo MX por recomendación y fue lo mejor que pude hacer. Carlos fue muy paciente, me explicó paso a paso qué debía tener listo y cómo funcionaba todo. Llenamos el formulario DS-160 juntos, sin prisas, y gracias a su asesoría me sentí súper preparada para mi cita. ¡Y me la aprobaron sin problema!</p>
+      <h4>— Guadalupe F., Veracruz</h4>
+    </article>
+    <article class="card2">
+      <p>“Tuve un rechazo anterior y tenía miedo de volver a intentarlo. Carlos revisó todo a detalle y esta vez sí me la aprobaron. ¡Gracias!”</p>
+      <h4>— Roberto G., CDMX</h4>
+    </article>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-flex">
+    <!-- Logo y descripción -->
+      <div class="footer-brand">
+        <img src="/assets/img/logomini.png" alt="VisaListo MX" class="logo">
+        <br><p>Asesoría profesional, clara <br> y personalizada para tu visa americana.</p>
+      </div>
+    
+      <!-- Enlaces centrados -->
+    <nav class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="testimonios.html">Testimonios</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    
+ <!-- Íconos a la derecha -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/visalistomx/" target="_blank" class="fa-brands fa-instagram"></a>
+      <a href="https://www.facebook.com/profile.php?id=61578817274632" target="_blank" class="fa-brands fa-facebook"></a>
+      <a href="mailto:dorvis.empresa@gmail.com" class="fa-solid fa-envelope"></a>
+      <a href="https://wa.me/2711738648" target="_blank" class="fa-brands fa-whatsapp"></a>
+    </div>
+  </div>
+
+  <!-- Derechos reservados -->
+  <p class="copyright">VisaListo MX | Todos los derechos reservados 2025</p>
+</footer>
+
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+ const menuToggle = document.getElementById("menu-toggle");
+const navlinks = document.getElementById("navlinks");
+const overlay = document.getElementById("overlay");
+
+// Abrir / cerrar menú
+menuToggle.addEventListener("click", () => {
+  navlinks.classList.toggle("show");
+  overlay.classList.toggle("show");
+});
+
+// Cerrar menú al hacer clic fuera (overlay)
+overlay.addEventListener("click", () => {
+  navlinks.classList.remove("show");
+  overlay.classList.remove("show");
+});
+
+</script>
+</body>
+</html>

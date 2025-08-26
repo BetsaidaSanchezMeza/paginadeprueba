@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VisaListo MX - Asesoría profesional para tramitar tu visa americana.">
+  <title>VisaListo MX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="topbar2">
+  <nav class="navbar2 container">
+    <a href="index.html" class="brand2">
+      <img src="/assets/img/logomini.png" alt="VisaListo MX Logo" class="logo">
+      <span class="span">VisaListo MX</span>
+    </a>
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+<div id="overlay">
+     <ul class="navlinks2" id="navlinks">
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="servicios.html">SERVICIOS</a></li>
+      <li><a href="testimonios.html">TESTIMONIOS</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contacto.html" class="btn btn-sm">CONTACTO</a></li>
+    </ul></div>
+  </nav>
+</header>
+  <div class="sobre-mi-header4">
+    <h1>CONTACTO</h1>
+  </div>
+<section class="container contact" data-aos="fade-up">
+  <h1>¿Tienes dudas o estás listo para comenzar?</h1>
+  <p>Estoy aquí para ayudarte. Completa el formulario y te responderé en menos de 24 horas.</p>
+  <div class="contact-grid">
+    <form class="form" action="sendmail.php" method="POST">
+      <div class="field">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <button type="submit" class="btn2">Enviar mensaje</button>
+      <p class="fineprint">Al enviar aceptas el tratamiento de datos para fines de asesoría.</p>
+    </form>
+    <aside class="contact-info">
+  <h3>Canales de atención</h3>
+  <ul class="social-icons">
+    <li>
+      <a href="https://wa.me/2711738648" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:dorvis.empresa@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/visalistomx/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/profile.php?id=61578817274632" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </li>
+  </ul>
+  <p>Atiendo solicitudes de toda la República Mexicana. Todo el proceso es en línea.</p>
+</aside>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-flex">
+    <!-- Logo y descripción -->
+      <div class="footer-brand">
+        <img src="/assets/img/logomini.png" alt="VisaListo MX" class="logo">
+        <br><p>Asesoría profesional, clara <br> y personalizada para tu visa americana.</p>
+      </div>
+    
+      <!-- Enlaces centrados -->
+    <nav class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="testimonios.html">Testimonios</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    
+ <!-- Íconos a la derecha -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/visalistomx/" target="_blank" class="fa-brands fa-instagram"></a>
+      <a href="https://www.facebook.com/profile.php?id=61578817274632" target="_blank" class="fa-brands fa-facebook"></a>
+      <a href="mailto:dorvis.empresa@gmail.com" class="fa-solid fa-envelope"></a>
+      <a href="https://wa.me/2711738648" target="_blank" class="fa-brands fa-whatsapp"></a>
+    </div>
+  </div>
+
+  <!-- Derechos reservados -->
+  <p class="copyright">VisaListo MX | Todos los derechos reservados 2025</p>
+</footer>
+
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+ const menuToggle = document.getElementById("menu-toggle");
+const navlinks = document.getElementById("navlinks");
+const overlay = document.getElementById("overlay");
+
+// Abrir / cerrar menú
+menuToggle.addEventListener("click", () => {
+  navlinks.classList.toggle("show");
+  overlay.classList.toggle("show");
+});
+
+// Cerrar menú al hacer clic fuera (overlay)
+overlay.addEventListener("click", () => {
+  navlinks.classList.remove("show");
+  overlay.classList.remove("show");
+});
+
+</script>
+</body>
+</html>

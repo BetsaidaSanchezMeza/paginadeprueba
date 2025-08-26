@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VisaListo MX - Asesoría profesional para tramitar tu visa americana.">
+  <title>VisaListo MX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="topbar2">
+  <nav class="navbar2 container">
+    <a href="index.html" class="brand2">
+      <img src="/assets/img/logomini.png" alt="VisaListo MX Logo" class="logo">
+      <span class="span">VisaListo MX</span>
+    </a>
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+<div id="overlay">
+<ul class="navlinks2" id="navlinks">
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="servicios.html">SERVICIOS</a></li>
+      <li><a href="testimonios.html">TESTIMONIOS</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contacto.html" class="btn btn-sm">CONTACTO</a></li>
+    </ul></div> 
+  </nav>
+</header>
+
+   <!-- Bloque con fondo -->
+  <div class="sobre-mi-header">
+    <h1>SOBRE MÍ</h1>
+  </div>
+<section class="container prose" data-aos="fade-up">
+<section class="sobre-mi container">
+  <div class="sobre-mi-grid">
+    <!-- Columna izquierda (imagen) -->
+    <div class="sobre-mi-img">
+      <img src="/assets/img/persona.png" alt="Asesor VisaListo MX">
+    </div>
+
+    <!-- Columna derecha (texto) -->
+    <div class="sobre-mi-text">
+      <p><strong>Un asesor real, comprometido contigo</strong></p>
+      <p>
+        Hola, soy Carlos, la persona detrás de VisaListo MX. Este proyecto nació con la intención de ofrecer un acompañamiento humano y confiable a quienes necesitan tramitar su visa americana. Más allá del papeleo, sé que detrás de cada trámite hay sueños, metas y, muchas veces, nervios o incertidumbre. Por eso, decidí crear un espacio donde puedas sentirte respaldado, escuchado y bien orientado.
+      </p>
+      <p>Mi compromiso no es solo que obtengas tu visa, sino que te sientas tranquilo en cada paso.</p>
+
+      <h3>¿Por qué lo hago?</h3>
+      <p>
+        Porque yo también he estado del otro lado, enfrentando formularios complicados, portales poco claros y sin saber por dónde empezar. Eso me motivó a prepararme, aprender y ahora compartir ese conocimiento contigo, de manera profesional y cercana.
+      </p>
+    </div>
+  </div>
+</section>
+<br><br>
+  <h3>Cómo trabajo</h3>
+  <ul class="bullets">
+    <li><i class="fa-solid fa-check"></i> Claridad sin rodeos.</li>
+    <li><i class="fa-solid fa-check"></i> Me adapto a tu ritmo, sin prisas ni respuestas automáticas.</li>
+    <li><i class="fa-solid fa-check"></i> Te acompaño con empatía, respeto y total disposición.</li>
+    <li><i class="fa-solid fa-check"></i> No vendo un trámite: te ofrezco confianza y acompañamiento real.</li>
+  </ul>
+<br>
+  <h3>¿Qué puedes esperar de mí?</h3>
+  <p>Una experiencia libre de tecnicismos innecesarios, con explicaciones sencillas, trato amable y atención uno a uno. No estás solo en el proceso. Estoy aquí para guiarte con paciencia y compromiso auténtico.</p>
+  <p>VisaListo MX no es una agencia más, es un servicio personal hecho con intención, empatía y atención real. Gracias por confiar en mí.</p>
+</section>
+
+<footer class="footer">
+  <div class="container footer-flex">
+    <!-- Logo y descripción -->
+      <div class="footer-brand">
+        <img src="/assets/img/logomini.png" alt="VisaListo MX" class="logo">
+        <br><p>Asesoría profesional, clara <br> y personalizada para tu visa americana.</p>
+      </div>
+    
+      <!-- Enlaces centrados -->
+    <nav class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="testimonios.html">Testimonios</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    
+ <!-- Íconos a la derecha -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/visalistomx/" target="_blank" class="fa-brands fa-instagram"></a>
+      <a href="https://www.facebook.com/profile.php?id=61578817274632" target="_blank" class="fa-brands fa-facebook"></a>
+      <a href="mailto:dorvis.empresa@gmail.com" class="fa-solid fa-envelope"></a>
+      <a href="https://wa.me/2711738648" target="_blank" class="fa-brands fa-whatsapp"></a>
+    </div>
+  </div>
+
+  <!-- Derechos reservados -->
+  <p class="copyright">VisaListo MX | Todos los derechos reservados 2025</p>
+</footer>
+
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+ const menuToggle = document.getElementById("menu-toggle");
+const navlinks = document.getElementById("navlinks");
+const overlay = document.getElementById("overlay");
+
+// Abrir / cerrar menú
+menuToggle.addEventListener("click", () => {
+  navlinks.classList.toggle("show");
+  overlay.classList.toggle("show");
+});
+
+// Cerrar menú al hacer clic fuera (overlay)
+overlay.addEventListener("click", () => {
+  navlinks.classList.remove("show");
+  overlay.classList.remove("show");
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,2000 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("/fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url("/fonts/Montserrat/Montserrat-Thin.ttf") format("truetype");
+  font-weight: 100; /* Thin */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url("/fonts/Open_Sans/") format("truetype");
+  font-weight: 100; /* Thin */
+  font-style: normal;
+}
+
+/*Open Sans*/
+@font-face {/* Regular */
+  font-family: "Open Sans";
+  src: url("/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Open Sans-Medium";
+  src: url("/fonts/Open_Sans/OpenSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: "Open Sans-SemiBold";
+  src: url("/fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Open Sans-Bold";
+  src: url("/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: "Open Sans-ExtraBold";
+  src: url("/fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: "Open Sans-Light";
+  src: url("/fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Open Sans-Italic";
+  src: url("/fonts/Open_Sans/OpenSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+:root{
+  --azul:#1f3c88;
+  --rojo:#CD2528;
+  --acento:#0B5ED7;
+  --fondo:#F7F9FC;
+  --text:#222;
+  --muted:#667085;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0; }
+body{
+  font-family:'Segoe UI';
+  color:var(--text);
+  line-height:1.6;
+  
+}
+.container{
+  margin:0 auto;
+  padding:0 20px
+}
+/*PARA TODAS LAS PAGINAS*/
+.topbar2{
+  position: fixed;   
+  top: 0;            
+  left: 0;
+  width: 100%; 
+  height: 65px;      
+  background: var(--azul);
+  z-index: 999;     
+}
+.navbar2{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:60px;
+  max-width:1250px;
+}
+.brand2{
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size: 20px;
+  font-family: "Montserrat-Medium";
+}
+.logo2{
+  height:42px;
+  width:auto;
+  border-radius:8px;
+  object-fit:cover;
+  padding:4px;
+}
+.logo2.mini{
+  height:32px;
+}
+
+.navlinks2{
+  display:flex;
+  gap:20px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  font-family: "Montserrat-SemiBold";
+
+}
+.navlinks2 a{
+  color:#fff;
+  text-decoration:none;
+  font-size: 18px;
+  opacity:.95;
+  display: inline-block; 
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-top: 12px;
+}
+.navlinks2 a:hover{
+  opacity:1;
+  text-decoration: none;
+  transform: scale(1.12); 
+  color: #c9d6ff;
+}
+/*PARA NOSOTROS*/
+.sobre-mi-header {
+  background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 90vh;
+}
+
+.sobre-mi-header h1 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* sombra para que resalte */
+}
+
+.sobre-mi-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* imagen 1 parte, texto 2 partes */
+  gap: 40px;
+  align-items: center;
+  text-align: justify;
+}
+
+.sobre-mi-img img {
+  width: 100%;
+  max-width: 380px; /* para que no se haga gigante */
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.sobre-mi-text h1 {
+  font-size: 36px;
+  color: var(--azul);
+  margin-bottom: 10px;
+}
+
+.sobre-mi-text p {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+/*PARA SERVICIOS*/
+.sobre-mi-header2 {
+  background: url("/assets/img/SERVICIOS.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 90vh;
+}
+.prose2{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:var(--radius);
+  margin:70px auto;
+  max-width:1250px;
+  font-family: "Montserrat-Medium";
+  font-size: 18px;
+  margin-top: 0px;
+  text-align: justify;
+}
+.pl{
+  font-family: "Montserrat-Bold";
+  text-align: center;
+  font-size: 30px;
+}
+.bullets2{
+  list-style:none;
+  padding-left:0;
+  font-size: 18px;
+  font-family: "Montserrat-Medium";
+}
+.bullets2 li{
+  margin:.4rem 0;
+}
+.bullets2 i
+{color:var(--azul);
+  margin-right:.5rem;
+  font-size: 25px;
+}
+/*PARA TESTIMONIO*/
+.prose3{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:var(--radius);
+  margin:100px auto;
+  max-width:1250px;
+  font-family: "Montserrat-Medium";
+  font-size: 18px;
+  margin-top: 50px;
+  text-align: justify;
+}
+.prose3 h1{
+  text-align: center;
+}
+.card2{
+  background:#fff;
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+  border:1px solid #e9eef5;
+  height: 400px;
+}
+.card2 b{
+  font-size: 19px;
+}
+.card2 i{
+  font-size:28px;
+  color:var(--azul);
+}
+.card2 p{
+  font-size: 17px;
+}
+.sobre-mi-header5 {
+  background: url("/assets/img/testimonios.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 90vh;
+}
+/*PARA FAQ*/
+.faq{
+  margin-top: 30px;
+  max-width:1250px;
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+.faq details{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:12px;
+  padding:14px 16px;
+  margin:12px 0;
+}
+.faq summary{
+  cursor:pointer;
+  font-weight:600;
+}
+.sobre-mi-header3 {
+  background: url("/assets/img/dudas.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 90vh;
+}
+/*PARA CONTACTO*/
+.contact{
+    max-width:1250px;
+    margin-top: 50px;
+    font-family: "Montserrat";
+}
+.contact h1{
+ text-align: center;
+ font-family: "Montserrat-Medium";
+}
+.contact .contact-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:24px;
+}
+.contact-info{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:var(--radius);
+  padding:18px;
+}
+.sobre-mi-header4 {
+  background: url("/assets/img/contacto.jpg") no-repeat center center/cover;
+  padding: 90px 0px; 
+  text-align: center;
+  color: #fff;              
+  margin-bottom: 10px;  
+  min-width: 90vh;
+}
+.btn2{
+  background:var(--rojo);
+  color:#fff;
+  padding:12px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  display:inline-block;
+  border:none;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(205,37,40,.25);
+  font-family:"Montserrat-Medium";
+  font-size: 17px;
+}
+.btn2:hover{
+  transform:translateY(-1px);
+}
+.social-icons {
+  display: flex;          /* íconos en fila */
+  gap: 50px;              /* espacio entre ellos */
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  justify-content: center; /* centrados */
+}
+
+.social-icons li a {
+  font-size: 48px;        /* tamaño de iconos */
+  color: var(--azul);     /* color base */
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons li a:hover {
+  transform: scale(1.2);  /* efecto agrandar al pasar el mouse */
+  color: var(--rojo);     /* cambia color en hover */
+}
+
+/*PARA INICIO*/ 
+.topbar {
+  position: fixed;   
+  top: 0;            
+  left: 0;
+  width: 100%; 
+  height: 67px;      
+  background: transparent; /* transparente por defecto */
+  z-index: 999;     
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.topbar.scrolled {
+  background: var(--azul); /* cambia al hacer scroll */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:60px;
+  max-width:1250px;
+}
+.span{
+  font-size: 22px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size: 20px;
+  font-family: "Montserrat-Medium";
+}
+.logo{
+  height:42px;
+  width:auto;
+  border-radius:8px;
+  object-fit:cover;
+  padding:4px;
+}
+.logo.mini{
+  height:32px;
+}
+
+.navlinks{
+  display:flex;
+  gap:20px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  font-family: "Montserrat-SemiBold";
+}
+.navlinks a{
+  color:#fff;
+  text-decoration:none;
+  font-size: 18px;
+  opacity:.95;
+  display: inline-block; 
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-top: 12px;
+}
+.navlinks a:hover{
+  opacity:1;
+  text-decoration: none;
+  transform: scale(1.12); 
+  color: #c9d6ff;
+}
+.btn{
+  background:var(--rojo);
+  color:#fff;
+  padding:12px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  display:inline-block;
+  border:none;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(205,37,40,.25);
+  font-family:"Montserrat-Medium";
+  font-size: 17px;
+}
+.btn:hover{
+  transform:translateY(-1px);
+}
+.btn.ghost{
+  background:#fff;
+  color:var(--azul);
+  box-shadow:none;
+  border:1px solid var(--azul);
+}
+.btn-sm{
+  padding:4px 9px;
+  font-family: "Montserrat SemiBold";
+  margin-top: 1px;
+}
+.hero{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:100px;
+  align-items:center;
+  padding:48px 0; 
+  top: 2.00px;
+  font-family: "NataSans";
+  max-width:1250px;
+}
+.hero-section {
+  background: url("/assets/img/fondo.jpg") no-repeat center center/cover;
+  min-height: 100vh; /* ocupa toda la pantalla */
+  min-width: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.hero h1{
+  font-size:40px;
+  line-height:1.15;
+  margin:.2rem 0 1rem;
+  font-family: "Montserrat-Black";
+}
+.hero p{
+  font-family:"Montserrat";
+}
+.hero li{
+  font-family: "Montserrat";
+}
+.accent{
+  color:var(--azul);
+}
+.hero .bullets{
+  padding:0;
+  list-style:none;
+  font-family:"Montserrat";
+}
+.hero .bullets li{
+  margin:.4rem 0;
+}
+.hero .bullets i{
+  color:darkgreen;
+  margin-right:.5rem;
+}
+.hero-art .hero-logo{
+  width:100%;
+  max-width:420px;
+  border-radius:var(--radius);
+
+}
+.split{
+  padding:36px 0;
+  max-width:1250px;
+}
+.services {
+  text-align: center; /* Centra el texto */
+  font-family: "Montserrat-Bold";
+  font-size: 25px;
+}
+.services p{
+  font-family: "Montserrat-Medium";
+  font-size: 19px;
+}
+.Cservives{
+  font-family: "Montserrat-Medium";
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:18px;
+}
+.card{
+  background:#fff;
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+  border:1px solid #e9eef5;
+  height: 130px;
+}
+.card b{
+  font-size: 19px;
+}
+.card i{
+  font-size:28px;
+  color:var(--azul);
+}
+.card p{
+  font-size: 17px;
+}
+
+.banner{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:var(--radius);
+  padding:28px 20px;
+  margin:40px auto;
+  font-family: "Montserrat";
+  max-width:1250px;
+}
+
+.banner h2{
+  font-family: "Montserrat-Medium";
+}
+.center{
+  text-align:center;
+  margin: 32px;
+  font-family: "Montserrat-Medium";
+  font-size: 18px;
+}
+.grid.two{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap: 12px;
+  list-style:none;
+  padding-left:0;
+  font-size: 19px;
+}
+.prose{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:var(--radius);
+  margin:70px auto;
+  max-width:1250px;
+  font-family: "Montserrat-Medium";
+  font-size: 18px;
+}
+.prose h1{
+  font-family: "Montserrat-Bold";
+  text-align: center;
+  font-size: 40px;
+}
+.bullets{
+  list-style:none;
+  padding-left:0;
+  font-size: 18px;
+  font-family: "Montserrat-Medium";
+}
+.bullets li{
+  margin:.4rem 0;
+}
+.bullets i
+{color:darkgreen;
+  margin-right:.5rem;
+}
+.callout{
+  background:#F0F6FF;
+  border-left:4px solid var(--acento);
+  padding:10px 14px;
+  border-radius:10px;
+}
+.cards.testimonials .card p{
+  font-size:1.02rem;
+  font-family: "Montserrat";
+}
+
+
+.form{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:var(--radius);
+  padding:18px;
+}
+.field{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:14px;
+}
+label{
+  font-weight:600;
+  margin-bottom:6px;
+}
+input,textarea{
+  padding:12px 12px;
+  border:1px solid #d7deea;
+  border-radius:10px;
+  font:inherit;
+  background:#fff;
+}
+input:focus,textarea:focus{
+  outline:none;
+  border-color:var(--acento);
+  box-shadow:0 0 0 3px rgba(11,94,215,.12);
+}
+.fineprint{
+  font-size:.9rem;
+  color:var(--muted);
+}
+
+.footer {
+  margin-top: 0;
+  background: #0f2b6e;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat-Medium";
+}
+
+.footer-brand .logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 8px;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  margin: 0px;
+  line-height: 1.3;
+  color: #fff;
+}
+
+/* 🔹 Enlaces centrados */
+.footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 1;
+  font-size: 120%;
+  font-family: "Montserrat-Medium";
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c9d6ff;
+}
+
+/* 🔹 Iconos a la derecha */
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #c9d6ff;
+}
+
+/* 🔹 Derechos reservados centrados abajo */
+.copyright {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #c9d6ff;
+  font-family: "Montserrat-Medium";
+}
+/* 🔹 Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 40px;  /* un poco más chico para verse elegante */
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  z-index: 1001;
+}
+@media (min-width: 200px) and (max-width: 400px){
+  /* Navbar */
+  .menu-toggle {
+    display: block; /* botón visible en móvil */
+    z-index: 1001;  
+  }
+
+  .hero-section {
+  background: url("/assets/img/fondo.jpg") no-repeat;
+  background-size: cover;
+  background-position: 26% 0%;
+  min-height: 50vh; /* ocupa toda la pantalla */
+  min-width: 51vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.hero-art .hero-logo{
+  width:100%;
+  max-width:300px;
+  margin-top: 10px;
+  border-radius:var(--radius);
+}
+.hero h1{
+  margin-top:-70px;
+  color: #fff;
+}
+.hero p{
+  color: #fff;
+}
+  .navlinks {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks a {
+    font-size: 20px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+.Cservives{
+  width: 50vh;
+}
+.banner{
+  width: 50vh;
+}
+.services h2{
+  font-size: 29px;
+}
+/*NOSOTROS*/
+  .navlinks2 {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks2.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks2 a {
+    font-size: 20px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+  .sobre-mi-img{
+   text-align: center;
+  }
+  .prose{
+    text-align: justify;
+    width: 50vh;
+  }
+  .sobre-mi-header {
+  background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 51vh;
+}
+.sobre-mi-text{
+  width: 44vh;
+  margin: -15px;
+}
+.sobre-mi-header h1 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* sombra para que resalte */
+}
+
+.hero h1{
+  margin-top: -50px;
+}
+/*SERVICIOS*/
+.sobre-mi-header2 {
+  background: url("/assets/img/SERVICIOS.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 51vh;
+}
+.prose2{
+  text-align: justify;
+  width: 50vh;
+}
+  /*TESTIMONIO*/
+.prose3{
+  width: 50vh;
+}
+  .prose3 h1{
+    font-size: 25px;
+  }
+  .sobre-mi-header5 {
+  background: url("/assets/img/testimonios.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 51vh;
+}
+/*FAQ*/
+.sobre-mi-header3 {
+  background: url("/assets/img/dudas.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 51vh;
+}
+.faq{
+  margin-top: 50px;
+  width: 51vh;
+}
+.faq details{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:12px;
+  padding:14px 16px;
+  margin:40.5px 0;
+}
+/*CONTACTO*/
+.sobre-mi-header4 {
+  background: url("/assets/img/contacto.jpg") no-repeat center center/cover;
+  padding: 90px 0px; 
+  text-align: center;
+  color: #fff;              
+  margin-bottom: 10px;  
+  min-width: 51vh;
+}
+.contact{
+  width: 50vh;
+}
+  /* Hero en 1 sola columna */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-art {
+    order: -1; /* logo arriba en móvil */
+  }
+
+  /* Secciones grid a una sola columna */
+  .sobre-mi-grid,
+  .contact .contact-grid,
+  .cards {
+    grid-template-columns: 1fr !important;
+  }
+ 
+
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+.footer {
+  margin-top: 0;
+  background: #0f2b6e;
+  color: #fff;
+  padding: 10px 0;
+  width: 51vh;
+}
+.footer-links{
+  gap: 6px;
+}
+.footer-links a{
+  font-size: 18px;
+}
+.footer-social a{
+  font-size: 30px;
+}
+.copyright{
+  font-size: 10px;
+}
+}
+@media (min-width: 401px)and (max-width: 500px){
+  /* Navbar */
+  .menu-toggle {
+    display: block; /* botón visible en móvil */
+    z-index: 1001;  
+  }
+
+  .hero-section {
+  background: url("/assets/img/fondo.jpg") no-repeat;
+  background-size: cover;
+  background-position: 34% 0%;
+  min-height: 50vh; /* ocupa toda la pantalla */
+  min-width: 35vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.hero-art .hero-logo{
+  width:100%;
+  max-width:300px;
+  margin-top: 10px;
+  border-radius:var(--radius);
+}
+.hero h1{
+  margin-top:-70px;
+  color: #fff;
+}
+.hero p{
+  color: #fff;
+}
+  .navlinks {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks a {
+    font-size: 20px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+
+.services h2{
+  font-size: 29px;
+}
+/*NOSOTROS*/
+  .navlinks2 {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks2.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks2 a {
+    font-size: 20px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+
+  .sobre-mi-img{
+   text-align: center;
+  }
+  .prose{
+    text-align: justify;
+  }
+  .sobre-mi-header {
+  background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 32vh;
+}
+
+.sobre-mi-header h1 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* sombra para que resalte */
+}
+/*SERVICIOS*/
+.sobre-mi-header2 {
+  background: url("/assets/img/SERVICIOS.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 32vh;
+}
+.prose2{
+  text-align: justify;
+}
+  /*TESTIMONIO*/
+  .card2{
+    height: 300px;  
+  }
+  .prose3 h1{
+    font-size: 25px;
+  }
+  .sobre-mi-header5 {
+  background: url("/assets/img/testimonios.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 32vh;
+}
+/*FAQ*/
+.sobre-mi-header3 {
+  background: url("/assets/img/dudas.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 32vh;
+}
+.faq{
+  margin-top: 50px;
+}
+.faq details{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:12px;
+  padding:14px 16px;
+  margin:40.5px 0;
+}
+/*CONTACTO*/
+.sobre-mi-header4 {
+  background: url("/assets/img/contacto.jpg") no-repeat center center/cover;
+  padding: 90px 0px; 
+  text-align: center;
+  color: #fff;              
+  margin-bottom: 10px;  
+  min-width: 32vh;
+}
+
+  /* Hero en 1 sola columna */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-art {
+    order: -1; /* logo arriba en móvil */
+  }
+
+  /* Secciones grid a una sola columna */
+  .sobre-mi-grid,
+  .contact .contact-grid,
+  .cards {
+    grid-template-columns: 1fr !important;
+  }
+ 
+
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+.footer {
+  margin-top: 0;
+  background: #0f2b6e;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+}
+.footer-links{
+  gap: 6.8px;
+}
+.footer-links a{
+  font-size: 15px;
+}
+.footer-social a{
+  font-size: 30px;
+}
+.copyright{
+  font-size: 10px;
+}
+}
+@media (min-width: 500px)and (max-width: 591px){
+  /* Navbar */
+  .menu-toggle {
+    display: block; /* botón visible en móvil */
+    z-index: 1001;  
+  }
+
+  .hero-art .hero-logo{
+  width:100%;
+  max-width:300px;
+  margin-top: 40px;
+  border-radius:var(--radius);
+}
+  .hero-section {
+  background: url("/assets/img/fondo.jpg") no-repeat;
+  background-size: cover;
+  background-position:1% 0%;
+  min-height: 50vh; /* ocupa toda la pantalla */
+  min-width: 71vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.hero h1{
+  font-size: 35px;
+  margin-top: -70px;
+}
+  .navlinks {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks a {
+    font-size: 20px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+.Cservives{
+  width: 65vh;
+}
+.banner{
+  width: 65vh;
+}
+.card i{
+ font-size: 30px;
+}
+.card b{
+font-size: 20px;
+}
+.card p{
+  font-size: 20px;
+}
+/*NOSOTROS*/
+
+  .navlinks2 {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks2.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks2 a {
+    font-size: 20px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+  .sobre-mi-img{
+   text-align: center;
+   margin-top: 10px;
+  }
+  .prose{
+    text-align: justify;
+    width: 70vh;
+  }
+
+  .sobre-mi-header {
+  background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 71vh;
+}
+
+.sobre-mi-header h1 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* sombra para que resalte */
+}
+/*SERVICIOS*/
+.sobre-mi-header2 {
+  background: url("/assets/img/SERVICIOS.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 71vh;
+}
+.prose2{
+  text-align: justify;
+  width: 70vh;
+}
+  /*TESTIMONIO*/
+  .card2{
+    height: 500px;
+  }
+  .card2 p{
+    font-size: 25px;
+  }
+  .card2 h4{
+    font-size: 30px;
+  }
+.prose3{
+  width: 70vh;
+}
+  .prose3 h1{
+    font-size: 25px;
+  }
+  .sobre-mi-header5 {
+  background: url("/assets/img/testimonios.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 71vh;
+}
+/*FAQ*/
+.sobre-mi-header3 {
+  background: url("/assets/img/dudas.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 71vh;
+}
+.faq{
+  margin-top: 50px;
+}
+.faq details{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:12px;
+  padding:14px 16px;
+  margin:40.5px 0;
+}
+/*CONTACTO*/
+.sobre-mi-header4 {
+  background: url("/assets/img/contacto.jpg") no-repeat center center/cover;
+  padding: 90px 0px; 
+  text-align: center;
+  color: #fff;              
+  margin-bottom: 10px;  
+  min-width: 71vh;
+}
+.contact{
+  width: 70vh;
+}
+  /* Hero en 1 sola columna */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-art {
+    order: -1; /* logo arriba en móvil */
+  }
+
+  /* Secciones grid a una sola columna */
+  .sobre-mi-grid,
+  .contact .contact-grid,
+  .cards {
+    grid-template-columns: 1fr !important;
+  }
+  .split{
+    width: 55vh;
+  }
+
+  .banner h2{
+    text-align: center;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+.footer {
+  margin-top: 0;
+  background: #0f2b6e;
+  color: #fff;
+  padding: 20px 0;
+  width: 71vh;
+}
+.footer-links a{
+  font-size: 23px;
+  gap: 10px;
+}
+.footer-links{
+  margin: -10px;
+}
+}
+/* 📱 Responsive - Celulares */
+@media (min-width: 592px) and (max-width: 600px){
+  /* Navbar */
+  .menu-toggle {
+    display:block; /* botón visible en móvil */
+    z-index: 1001;
+  }
+
+  .hero-section {
+  background: url("/assets/img/fondo.jpg") no-repeat;
+  background-size: cover;
+  background-position: 23%;
+  min-height: 50vh; /* ocupa toda la pantalla */
+  min-width: 55vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.hero-art .hero-logo{
+  width:100%;
+  max-width:320px;
+  border-radius:var(--radius);
+}
+.hero h1{
+  font-size:35px;
+  margin-top: -80px;
+}
+
+  .navlinks {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks a {
+    font-size: 25px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+
+/*NOSOTROS*/
+
+  .navlinks2 {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks2.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks2 a {
+    font-size: 25px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+
+  .sobre-mi-header {
+  background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 55vh;
+}
+.prose{
+  text-align: justify;
+  width:55vh;
+}
+  .sobre-mi-img{
+   text-align: center;
+  }
+
+  /*SERVICIOS*/
+  .sobre-mi-header2 {
+  background: url("/assets/img/SERVICIOS.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 55vh;
+}
+  /*TESTIMONIO*/
+  .card2{
+    height: 350px;    
+  }
+  .prose3 h1{
+    font-size: 25px;
+  }
+    .sobre-mi-header5 {
+  background: url("/assets/img/testimonios.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 55vh;
+}
+/*FAQ*/
+.sobre-mi-header3 {
+  background: url("/assets/img/dudas.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 55vh;
+}
+/*CONTACTO*/
+.sobre-mi-header4 {
+  background: url("/assets/img/contacto.jpg") no-repeat center center/cover;
+  padding: 90px 0px; 
+  text-align: center;
+  color: #fff;              
+  margin-bottom: 10px;  
+  min-width: 55vh;
+}
+  /* Hero en 1 sola columna */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-art {
+    order: -1; /* logo arriba en móvil */
+  }
+
+  /* Secciones grid a una sola columna */
+  .sobre-mi-grid,
+  .contact .contact-grid,
+  .cards {
+    grid-template-columns: 1fr !important;
+  }
+.footer {
+  margin-top: 0;
+  background: #0f2b6e;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer-links{
+  gap: 15px;
+}
+.footer-links a{
+  font-size: 19px;
+}
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px){
+  /* Navbar */
+  .menu-toggle {
+    display: block; /* botón visible en móvil */
+    z-index: 1001;
+  }
+
+  .hero-section {
+  background: url("/assets/img/fondo.jpg") no-repeat;
+  background-size: cover;
+  background-position: 15% 0%;
+  min-height: 50vh; /* ocupa toda la pantalla */
+  min-width: 50vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.hero-art .hero-logo{
+  width:100%;
+  max-width:290px;
+  border-radius:var(--radius);
+}
+.hero h1{
+  font-size:35px;
+  margin-top: -70px;
+}
+  .navlinks {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks a {
+    font-size: 23px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+
+/*NOSOTROS*/
+
+  .navlinks2 {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks2.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks2 a {
+    font-size: 23px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+  .sobre-mi-header {
+  background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 55vh;
+}
+.prose{
+  text-align: justify;
+  width:55vh;
+}
+  .sobre-mi-img{
+   text-align: center;
+  }
+  .prose{
+    text-align: justify;
+  }
+  /*SERVICIOS*/
+  .sobre-mi-header2 {
+  background: url("/assets/img/SERVICIOS.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 55vh;
+}
+  /*TESTIMONIO*/
+  .card2{
+    height: 350px; 
+    font-size: 22px;
+  }
+  .card2 p{
+    font-size: 22px;
+  }
+  .prose3 h1{
+    font-size: 25px;
+  }
+    .sobre-mi-header5 {
+  background: url("/assets/img/testimonios.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 55vh;
+}
+/*FAQ*/
+.sobre-mi-header3 {
+  background: url("/assets/img/dudas.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 55vh;
+}
+/*CONTACTO*/
+.sobre-mi-header4 {
+  background: url("/assets/img/contacto.jpg") no-repeat center center/cover;
+  padding: 90px 0px; 
+  text-align: center;
+  color: #fff;              
+  margin-bottom: 10px;  
+  min-width: 55vh;
+}
+  /* Hero en 1 sola columna */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-art {
+    order: -1; /* logo arriba en móvil */
+  }
+
+  /* Secciones grid a una sola columna */
+  .sobre-mi-grid,
+  .contact .contact-grid,
+  .cards {
+    grid-template-columns: 1fr !important;
+  }
+.footer {
+  margin-top: 0;
+  background: #0f2b6e;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+}
+.footer-links{
+  gap: 15px;
+}
+.footer-links a{
+  font-size: 20px;
+}
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1050px){
+
+
+.split{
+  width: 100vh;
+}
+.banner{
+  width: 100vh;
+}
+/*NOSOTROS*/
+  .sobre-mi-header {
+  background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 100vh;
+}
+.prose{
+  text-align: justify;
+}
+/*SERVICIOS*/
+.sobre-mi-header2 {
+  background: url("/assets/img/SERVICIOS.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 100vh;
+}
+.prose2{
+  width: 100vh;
+  text-align: justify;
+}
+/*TESTIMONIO*/
+  .card2{
+    height: 800px;
+    font-size: 25px;
+  }
+  .prose3{
+    width: 100vh;
+  }
+  .prose3 h1{
+    font-size: 25px;
+  }
+  .sobre-mi-header5 {
+  background: url("/assets/img/testimonios.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 100vh;
+}
+.card2 p{
+  font-size: 23px;
+}
+/*FAQ*/
+.sobre-mi-header3 {
+  background: url("/assets/img/dudas.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 100vh;
+}
+.faq{
+  margin-top: 50px;
+  width: 100vh;
+  height: 915px;
+}
+.faq details{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:12px;
+  padding:14px 16px;
+  margin:40.5px 0;
+}
+.sobre-mi-header4 {
+  background: url("/assets/img/contacto.jpg") no-repeat center center/cover;
+  padding: 90px 0px; 
+  text-align: center;
+  color: #fff;              
+  margin-bottom: 10px;  
+  min-width: 100vh;
+}
+.contact{
+  width: 100vh;
+  height: 65vh;
+}
+.footer {
+  margin-top: 0;
+  background: #0f2b6e;
+  color: #fff;
+  padding: 20px 0;
+  width: 100vh;
+}
+.footer-links a{
+  font-size: 16px;
+}
+.footer-social{
+  font-size: 10px;
+}
+}

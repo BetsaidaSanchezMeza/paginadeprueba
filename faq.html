@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VisaListo MX - Asesoría profesional para tramitar tu visa americana.">
+  <title>VisaListo MX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="topbar2">
+  <nav class="navbar2 container">
+    <a href="index.html" class="brand2">
+      <img src="/assets/img/logomini.png" alt="VisaListo MX Logo" class="logo">
+      <span class="span">VisaListo MX</span>
+    </a>
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+<div id="overlay">
+<ul class="navlinks2" id="navlinks">
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="servicios.html">SERVICIOS</a></li>
+      <li><a href="testimonios.html">TESTIMONIOS</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contacto.html" class="btn btn-sm">CONTACTO</a></li>
+    </ul></div>
+  </nav>
+</header>
+  <div class="sobre-mi-header3">
+    <h1>PREGUNTAS FRECUENTES</h1>
+  </div>
+<section class="container faq" data-aos="fade-up">
+  <details>
+    <summary> ¿Qué necesito para tramitar mi visa con VisaListo MX?</summary>
+    <ul>
+      <li>Pasaporte vigente (al menos 6 meses antes del vencimiento).</li>
+      <li>Acceso a internet (proceso 100% en línea).</li>
+      <li>Datos personales, laborales, escolares y de viajes anteriores (si los hay) actualizados.</li>
+    </ul>
+    <p>No necesitas experiencia previa. Te guío desde cero.</p>
+  </details>
+  <details>
+    <summary>¿La asesoría garantiza que me otorguen la visa?</summary>
+    <p>No. La aprobación depende del oficial consular. Lo que sí garantizo: trámite bien hecho, claridad en cada paso y preparación para tu entrevista.</p>
+  </details>
+  <details>
+    <summary>¿Cuánto tiempo tarda todo el proceso?</summary>
+    <p>Varía según disponibilidad de citas. El trámite inicial (DS-160, perfil y programación de cita) suele completarse entre 3 y 5 días hábiles.</p>
+  </details>
+  <details>
+    <summary>¿Cómo realizo el pago del servicio?</summary>
+    <p>Transferencia bancaria, depósitos en tiendas de conveniencia o pagos electrónicos seguros. El monto y método se acuerdan al inicio según el tipo de visa.</p>
+  </details>
+  <details>
+    <summary>¿Qué incluye exactamente la asesoría?</summary>
+    <ul>
+      <li>Llenado completo del DS-160</li>
+      <li>Creación o recuperación de perfil</li>
+      <li>Agendado de cita en CAS y consulado</li>
+      <li>Revisión de documentos</li>
+      <li>Asesoría personalizada para la entrevista</li>
+    </ul>
+  </details>
+  <details>
+    <summary>¿Qué pasa si tengo dudas durante el proceso?</summary>
+    <p>Disponibilidad continua por WhatsApp/correo y videollamadas cuando lo necesites.</p>
+  </details>
+  <details>
+    <summary>¿Mis datos están seguros?</summary>
+    <p>Sí. Manejo confidencial y uso exclusivo para tu trámite.</p>
+  </details>
+</section>
+
+<footer class="footer">
+  <div class="container footer-flex">
+    <!-- Logo y descripción -->
+      <div class="footer-brand">
+        <img src="/assets/img/logomini.png" alt="VisaListo MX" class="logo">
+        <br><p>Asesoría profesional, clara <br> y personalizada para tu visa americana.</p>
+      </div>
+    
+      <!-- Enlaces centrados -->
+    <nav class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="testimonios.html">Testimonios</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    
+ <!-- Íconos a la derecha -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/visalistomx/" target="_blank" class="fa-brands fa-instagram"></a>
+      <a href="https://www.facebook.com/profile.php?id=61578817274632" target="_blank" class="fa-brands fa-facebook"></a>
+      <a href="mailto:dorvis.empresa@gmail.com" class="fa-solid fa-envelope"></a>
+      <a href="https://wa.me/2711738648" target="_blank" class="fa-brands fa-whatsapp"></a>
+    </div>
+  </div>
+
+  <!-- Derechos reservados -->
+  <p class="copyright">VisaListo MX | Todos los derechos reservados 2025</p>
+</footer>
+
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+ const menuToggle = document.getElementById("menu-toggle");
+const navlinks = document.getElementById("navlinks");
+const overlay = document.getElementById("overlay");
+
+// Abrir / cerrar menú
+menuToggle.addEventListener("click", () => {
+  navlinks.classList.toggle("show");
+  overlay.classList.toggle("show");
+});
+
+// Cerrar menú al hacer clic fuera (overlay)
+overlay.addEventListener("click", () => {
+  navlinks.classList.remove("show");
+  overlay.classList.remove("show");
+});
+
+</script>
+</body>
+</html>
