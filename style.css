@@ -792,10 +792,10 @@ input:focus,textarea:focus{
     z-index: 1001;  
   }
 .topbar{
-  width: 47vh;
+  width: 100%;
 }
 .topbar2{
-  width: 47vh;
+  width: 100%;
 }
   .hero-section {
   background: url("/assets/img/fondo.jpg") no-repeat;
