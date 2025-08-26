@@ -785,19 +785,24 @@ input:focus,textarea:focus{
   right: 10px;
   z-index: 1001;
 }
-@media (min-width: 200px) and (max-width: 400px){
+@media (min-width: 300px) and (max-width: 400px){
   /* Navbar */
   .menu-toggle {
     display: block; /* botón visible en móvil */
     z-index: 1001;  
   }
-
+.topbar{
+  width: 47vh;
+}
+.topbar2{
+  width: 47vh;
+}
   .hero-section {
   background: url("/assets/img/fondo.jpg") no-repeat;
   background-size: cover;
   background-position: 26% 0%;
   min-height: 50vh; /* ocupa toda la pantalla */
-  min-width: 59vh;
+  min-width: 44vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -851,10 +856,10 @@ input:focus,textarea:focus{
   display: block;
 }
 .Cservives{
-  width: 58vh;
+  width: 100%;
 }
 .banner{
-  width: 58vh;
+  width: 100%;
 }
 .services h2{
   font-size: 29px;
@@ -907,10 +912,10 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 59vh;
+  min-width: 44vh;
 }
 .sobre-mi-text{
-  width: 48vh;
+  width: 40vh;
   margin: -15px;
 }
 .sobre-mi-header h1 {
@@ -920,7 +925,7 @@ input:focus,textarea:focus{
   text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* sombra para que resalte */
 }
 .prose{
-  width: 55vh;
+  width: 100%;
 }
 .hero h1{
   margin-top: -50px;
@@ -932,15 +937,15 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 59vh;
+  min-width: 40vh;
 }
 .prose2{
   text-align: justify;
-  width: 55vh;
+  width: 100%;
 }
   /*TESTIMONIO*/
 .prose3{
-  width: 55vh;
+  width: 100%;
 }
   .prose3 h1{
     font-size: 25px;
@@ -954,7 +959,7 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 59vh;
+  min-width: 40vh;
 }
 /*FAQ*/
 .sobre-mi-header3 {
@@ -963,11 +968,11 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 59vh;
+  min-width: 40vh;
 }
 .faq{
   margin-top: 50px;
-  width: 55vh;
+  width: 100%;
 }
 .faq details{
   background:#fff;
@@ -983,10 +988,10 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              
   margin-bottom: 10px;  
-  min-width: 59vh;
+  min-width: 40vh;
 }
 .contact{
-  width: 55vh;
+  width: 100%;
 }
   /* Hero en 1 sola columna */
   .hero {
@@ -1017,13 +1022,13 @@ input:focus,textarea:focus{
   background: #0f2b6e;
   color: #fff;
   padding: 10px 0;
-  width: 59vh;
+  width:100%;
 }
 .footer-links{
   gap: 6px;
 }
 .footer-links a{
-  font-size: 16px;
+  font-size: 12px;
 }
 .footer-social a{
   font-size: 30px;
@@ -1038,13 +1043,18 @@ input:focus,textarea:focus{
     display: block; /* botón visible en móvil */
     z-index: 1001;  
   }
-
+.topbar{
+  width: 56vh;
+}
+.topbar2{
+  width: 56vh;
+}
   .hero-section {
   background: url("/assets/img/fondo.jpg") no-repeat;
   background-size: cover;
   background-position: 34% 0%;
   min-height: 50vh; /* ocupa toda la pantalla */
-  min-width: 60vh;
+  min-width: 56vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -1102,10 +1112,10 @@ input:focus,textarea:focus{
   font-size: 29px;
 }
 .Cservives{
-  width: 60vh;
+  width: 100%;
 }
 .banner{
-  width: 60vh;
+  width: 100%;
 }
 /*NOSOTROS*/
   .navlinks2 {
@@ -1148,7 +1158,7 @@ input:focus,textarea:focus{
   }
   .prose{
     text-align: justify;
-    width: 60vh;
+    width: 100%;
   }
   .sobre-mi-header {
   background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
@@ -1156,7 +1166,7 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 60vh;
+  min-width: 44vh;
 }
 
 .sobre-mi-header h1 {
@@ -1176,7 +1186,7 @@ input:focus,textarea:focus{
 }
 .prose2{
   text-align: justify;
-  width: 60vh;
+  width: 100%;
 }
   /*TESTIMONIO*/
   .card2{
@@ -1200,11 +1210,11 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 60vh;
+  min-width: 56vh;
 }
 .faq{
   margin-top: 50px;
-  width: 60vh;
+  width: 100%;
 }
 .faq details{
   background:#fff;
@@ -1234,7 +1244,7 @@ input:focus,textarea:focus{
     order: -1; /* logo arriba en móvil */
   }
 .contact{
-  width: 60vh;
+  width: 100%;
 }
   /* Secciones grid a una sola columna */
   .sobre-mi-grid,
@@ -1254,13 +1264,497 @@ input:focus,textarea:focus{
   background: #0f2b6e;
   color: #fff;
   padding: 20px 0;
-  width: 60vh;
+  width: 100%;
 }
 .footer-links{
   gap: 6.8px;
 }
 .footer-links a{
-  font-size: 15px;
+  font-size: 14px;
+}
+.footer-social a{
+  font-size: 30px;
+}
+.copyright{
+  font-size: 10px;
+}
+}
+@media (min-width: 401px) and (min-height:915px) {
+  /* Navbar */
+  .menu-toggle {
+    display: block; /* botón visible en móvil */
+    z-index: 1001;  
+  }
+.topbar{
+  width: 47vh;
+}
+.topbar2{
+  width: 47vh;
+}
+  .hero-section {
+  background: url("/assets/img/fondo.jpg") no-repeat;
+  background-size: cover;
+  background-position: 34% 0%;
+  min-height: 50vh; /* ocupa toda la pantalla */
+  min-width: 40vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.hero-art .hero-logo{
+  width:100%;
+  max-width:300px;
+  margin-top: 10px;
+  border-radius:var(--radius);
+}
+.hero h1{
+  margin-top:-70px;
+  color: #fff;
+}
+.hero p{
+  color: #fff;
+}
+  .navlinks {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks a {
+    font-size: 20px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+
+.services h2{
+  font-size: 29px;
+}
+.Cservives{
+  width: 100%;
+}
+.banner{
+  width: 100%;
+}
+/*NOSOTROS*/
+  .navlinks2 {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks2.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks2 a {
+    font-size: 20px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+
+  .sobre-mi-img{
+   text-align: center;
+  }
+  .prose{
+    text-align: justify;
+    width: 100%;
+  }
+  .sobre-mi-header {
+  background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 44vh;
+}
+
+.sobre-mi-header h1 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* sombra para que resalte */
+}
+/*SERVICIOS*/
+.sobre-mi-header2 {
+  background: url("/assets/img/SERVICIOS.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 40vh;
+}
+.prose2{
+  text-align: justify;
+  width: 100%;
+}
+  /*TESTIMONIO*/
+  .card2{
+    height: 300px;  
+  }
+  .prose3 h1{
+    font-size: 25px;
+  }
+  .sobre-mi-header5 {
+  background: url("/assets/img/testimonios.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 40vh;
+}
+/*FAQ*/
+.sobre-mi-header3 {
+  background: url("/assets/img/dudas.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 40vh;
+}
+.faq{
+  margin-top: 50px;
+  width: 100%;
+}
+.faq details{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:12px;
+  padding:14px 16px;
+  margin:40.5px 0;
+}
+/*CONTACTO*/
+.sobre-mi-header4 {
+  background: url("/assets/img/contacto.jpg") no-repeat center center/cover;
+  padding: 90px 0px; 
+  text-align: center;
+  color: #fff;              
+  margin-bottom: 10px;  
+  min-width: 40vh;
+}
+
+  /* Hero en 1 sola columna */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-art {
+    order: -1; /* logo arriba en móvil */
+  }
+.contact{
+  width: 100%;
+}
+  /* Secciones grid a una sola columna */
+  .sobre-mi-grid,
+  .contact .contact-grid,
+  .cards {
+    grid-template-columns: 1fr !important;
+  }
+ 
+
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+.footer {
+  margin-top: 0;
+  background: #0f2b6e;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+}
+.footer-links{
+  gap: 6.8px;
+}
+.footer-links a{
+  font-size: 14px;
+}
+.footer-social a{
+  font-size: 30px;
+}
+.copyright{
+  font-size: 10px;
+}
+}
+@media (min-width: 401px) and (min-height:874px) {
+  /* Navbar */
+  .menu-toggle {
+    display: block; /* botón visible en móvil */
+    z-index: 1001;  
+  }
+.topbar{
+  width: 47vh;
+}
+.topbar2{
+  width: 47vh;
+}
+  .hero-section {
+  background: url("/assets/img/fondo.jpg") no-repeat;
+  background-size: cover;
+  background-position: 34% 0%;
+  min-height: 50vh; /* ocupa toda la pantalla */
+  min-width: 40vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.hero-art .hero-logo{
+  width:100%;
+  max-width:300px;
+  margin-top: 10px;
+  border-radius:var(--radius);
+}
+.hero h1{
+  margin-top:-70px;
+  color: #fff;
+}
+.hero p{
+  color: #fff;
+}
+  .navlinks {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks a {
+    font-size: 20px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+
+.services h2{
+  font-size: 29px;
+}
+.Cservives{
+  width: 100%;
+}
+.banner{
+  width: 100%;
+}
+/*NOSOTROS*/
+  .navlinks2 {
+    position: fixed;
+    top: 65px; /* debajo del header */
+    right: -100%; /* escondido inicialmente */
+    width: 50%;
+    height: calc(100vh - 65px);
+    background: var(--azul);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    gap: 40px;
+    transition: left 0.3s ease;
+  }
+  .navlinks2.show {
+    right: 0; /* se despliega */
+  }
+  .navlinks2 a {
+    font-size: 20px;
+  }
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* negro semitransparente */
+  display: none;
+  z-index: 999; /* debajo del menú pero arriba del contenido */
+}
+
+#overlay.show {
+  display: block;
+}
+
+  .sobre-mi-img{
+   text-align: center;
+  }
+  .prose{
+    text-align: justify;
+    width: 100%;
+  }
+  .sobre-mi-header {
+  background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 44vh;
+}
+
+.sobre-mi-header h1 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* sombra para que resalte */
+}
+/*SERVICIOS*/
+.sobre-mi-header2 {
+  background: url("/assets/img/SERVICIOS.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 40vh;
+}
+.prose2{
+  text-align: justify;
+  width: 100%;
+}
+  /*TESTIMONIO*/
+  .card2{
+    height: 300px;  
+  }
+  .prose3 h1{
+    font-size: 25px;
+  }
+  .sobre-mi-header5 {
+  background: url("/assets/img/testimonios.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 40vh;
+}
+/*FAQ*/
+.sobre-mi-header3 {
+  background: url("/assets/img/dudas.jpg") no-repeat center center/cover;
+  padding: 90px 0px;       /* alto de la franja */
+  text-align: center;
+  color: #fff;              /* texto blanco encima de la imagen */
+  margin-bottom: 10px;  
+  min-width: 40vh;
+}
+.faq{
+  margin-top: 50px;
+  width: 100%;
+}
+.faq details{
+  background:#fff;
+  border:1px solid #e9eef5;
+  border-radius:12px;
+  padding:14px 16px;
+  margin:40.5px 0;
+}
+/*CONTACTO*/
+.sobre-mi-header4 {
+  background: url("/assets/img/contacto.jpg") no-repeat center center/cover;
+  padding: 90px 0px; 
+  text-align: center;
+  color: #fff;              
+  margin-bottom: 10px;  
+  min-width: 40vh;
+}
+
+  /* Hero en 1 sola columna */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-art {
+    order: -1; /* logo arriba en móvil */
+  }
+.contact{
+  width: 100%;
+}
+  /* Secciones grid a una sola columna */
+  .sobre-mi-grid,
+  .contact .contact-grid,
+  .cards {
+    grid-template-columns: 1fr !important;
+  }
+ 
+
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+.footer {
+  margin-top: 0;
+  background: #0f2b6e;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+}
+.footer-links{
+  gap: 6.8px;
+}
+.footer-links a{
+  font-size: 14px;
 }
 .footer-social a{
   font-size: 30px;
