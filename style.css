@@ -797,7 +797,7 @@ input:focus,textarea:focus{
   background-size: cover;
   background-position: 26% 0%;
   min-height: 50vh; /* ocupa toda la pantalla */
-  min-width: 51vh;
+  min-width: 59vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -851,10 +851,10 @@ input:focus,textarea:focus{
   display: block;
 }
 .Cservives{
-  width: 50vh;
+  width: 58vh;
 }
 .banner{
-  width: 50vh;
+  width: 58vh;
 }
 .services h2{
   font-size: 29px;
@@ -907,10 +907,10 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 51vh;
+  min-width: 59vh;
 }
 .sobre-mi-text{
-  width: 44vh;
+  width: 48vh;
   margin: -15px;
 }
 .sobre-mi-header h1 {
@@ -919,7 +919,9 @@ input:focus,textarea:focus{
   font-weight: 700;
   text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* sombra para que resalte */
 }
-
+.prose{
+  width: 55vh;
+}
 .hero h1{
   margin-top: -50px;
 }
@@ -930,18 +932,21 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 51vh;
+  min-width: 59vh;
 }
 .prose2{
   text-align: justify;
-  width: 50vh;
+  width: 55vh;
 }
   /*TESTIMONIO*/
 .prose3{
-  width: 50vh;
+  width: 55vh;
 }
   .prose3 h1{
     font-size: 25px;
+  }
+  .card2{
+    height: 400px;
   }
   .sobre-mi-header5 {
   background: url("/assets/img/testimonios.jpg") no-repeat center center/cover;
@@ -949,7 +954,7 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 51vh;
+  min-width: 59vh;
 }
 /*FAQ*/
 .sobre-mi-header3 {
@@ -958,11 +963,11 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 51vh;
+  min-width: 59vh;
 }
 .faq{
   margin-top: 50px;
-  width: 51vh;
+  width: 55vh;
 }
 .faq details{
   background:#fff;
@@ -978,10 +983,10 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              
   margin-bottom: 10px;  
-  min-width: 51vh;
+  min-width: 59vh;
 }
 .contact{
-  width: 50vh;
+  width: 55vh;
 }
   /* Hero en 1 sola columna */
   .hero {
@@ -1012,13 +1017,13 @@ input:focus,textarea:focus{
   background: #0f2b6e;
   color: #fff;
   padding: 10px 0;
-  width: 51vh;
+  width: 59vh;
 }
 .footer-links{
   gap: 6px;
 }
 .footer-links a{
-  font-size: 18px;
+  font-size: 16px;
 }
 .footer-social a{
   font-size: 30px;
@@ -1039,7 +1044,7 @@ input:focus,textarea:focus{
   background-size: cover;
   background-position: 34% 0%;
   min-height: 50vh; /* ocupa toda la pantalla */
-  min-width: 35vh;
+  min-width: 60vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -1096,6 +1101,12 @@ input:focus,textarea:focus{
 .services h2{
   font-size: 29px;
 }
+.Cservives{
+  width: 60vh;
+}
+.banner{
+  width: 60vh;
+}
 /*NOSOTROS*/
   .navlinks2 {
     position: fixed;
@@ -1137,6 +1148,7 @@ input:focus,textarea:focus{
   }
   .prose{
     text-align: justify;
+    width: 60vh;
   }
   .sobre-mi-header {
   background: url("/assets/img/SobreMi.jpg") no-repeat center center/cover;
@@ -1144,7 +1156,7 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 32vh;
+  min-width: 60vh;
 }
 
 .sobre-mi-header h1 {
@@ -1160,10 +1172,11 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 32vh;
+  min-width: 60vh;
 }
 .prose2{
   text-align: justify;
+  width: 60vh;
 }
   /*TESTIMONIO*/
   .card2{
@@ -1178,7 +1191,7 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 32vh;
+  min-width: 60vh;
 }
 /*FAQ*/
 .sobre-mi-header3 {
@@ -1187,10 +1200,11 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              /* texto blanco encima de la imagen */
   margin-bottom: 10px;  
-  min-width: 32vh;
+  min-width: 60vh;
 }
 .faq{
   margin-top: 50px;
+  width: 60vh;
 }
 .faq details{
   background:#fff;
@@ -1206,7 +1220,7 @@ input:focus,textarea:focus{
   text-align: center;
   color: #fff;              
   margin-bottom: 10px;  
-  min-width: 32vh;
+  min-width: 60vh;
 }
 
   /* Hero en 1 sola columna */
@@ -1219,7 +1233,9 @@ input:focus,textarea:focus{
   .hero-art {
     order: -1; /* logo arriba en móvil */
   }
-
+.contact{
+  width: 60vh;
+}
   /* Secciones grid a una sola columna */
   .sobre-mi-grid,
   .contact .contact-grid,
@@ -1238,7 +1254,7 @@ input:focus,textarea:focus{
   background: #0f2b6e;
   color: #fff;
   padding: 20px 0;
-  width: 100%;
+  width: 60vh;
 }
 .footer-links{
   gap: 6.8px;
